@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrueForm - Reseñas</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-badge"><img src="../fotos/logo.jpeg" alt="TrueForm"></span>
+      TrueForm
+    </div>
+    <button type="button" class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html">Inicio</a>
+      <a href="nosotros.html">Sobre Nosotros</a>
+      <a href="beneficios.html">Beneficios</a>
+      <a href="resenas.html" class="active">Reseñas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="login.html" class="btn-login">Iniciar Sesión</a>
+      <a href="registro.html" class="btn-register">Registrar</a>
+    </nav>
+  </header>
+
+  <main class="teal-page">
+    <div class="container reviews-grid">
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <div class="user">@carlos_fit</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>rueForm me ayudó a organizar mis rutinas semanales y llevar un seguimiento claro de mi progreso.
+          Ahora entreno con más disciplina y no pierdo mis registros.</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <div class="user">@ana_runner</div>
+            <div class="stars">★★★★<span class="off">★</span></div>
+          </div>
+        </div>
+        <p>La interfaz es muy intuitiva y puedo revisar mis ejercicios desde cualquier dispositivo.
+          Me gustaría tener más opciones de personalización, pero en general la experiencia es excelente.</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <div class="user">@miguelgym</div>
+            <div class="stars">★★★★★<span class="off"></span></div>
+          </div>
+        </div>
+        <p>Antes anotaba mis entrenamientos en papel y era un desastre.
+          Con TrueForm puedo ver mis avances y mantener mis objetivos siempre visibles.</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="avatar"><i class="fa-solid fa-user"></i></div>
+          <div>
+            <div class="user">@valeria_active</div>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+        <p>Lo que más me gusta es la facilidad para registrar mis sesiones y monitorear mi rendimiento.
+          La aplicación hace que el seguimiento de mis metas sea mucho más sencillo.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">© 2026 TrueForm — Tu entrenador inteligente.</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrueForm - Tu entrenador inteligente</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-badge"><img src="fotos/logo.jpeg" alt="TrueForm"></span>
+      TrueForm
+    </div>
+    <button type="button" class="nav-toggle" aria-label="Abrir menú" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="html/nosotros.html">Sobre Nosotros</a>
+      <a href="html/beneficios.html">Beneficios</a>
+      <a href="html/resenas.html">Reseñas</a>
+      <a href="html/contacto.html">Contacto</a>
+      <a href="html/login.html" class="btn-login">Iniciar Sesión</a>
+      <a href="html/registro.html" class="btn-register">Registrar</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="container hero">
+    <div class="hero-text">
+      <h1>Entrena con confianza,<br><span>alcanza tu mejor versión</span></h1>
+      <p>Guías de entrenamiento confiables, rutinas personalizadas y un asistente IA que acompaña cada paso.</p>
+      <div class="hero-actions">
+        <a href="html/beneficios.html" class="btn btn-primary">Explorar Rutinas</a>
+        <a href="html/nosotros.html" class="btn btn-ghost">Conocer más</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Entrenamiento">
+    </div>
+  </section>
+
+  <!-- Tarjetas resumen -->
+  <section class="feature-strip">
+    <div class="fs-item">
+      <div class="fs-icon"><i class="fa-solid fa-robot"></i></div>
+      <div>
+        <h4>Asistente IA</h4>
+        <p>Obtén recomendaciones inteligentes y respuestas basadas en evidencia.</p>
+        <a class="fs-link" href="html/beneficios.html">Hablar con IA →</a>
+      </div>
+    </div>
+    <div class="fs-item">
+      <div class="fs-icon"><i class="fa-solid fa-list-check"></i></div>
+      <div>
+        <h4>Rutinas personalizadas</h4>
+        <p>Planes adaptados a tu nivel, objetivos y disponibilidad.</p>
+        <a class="fs-link" href="html/beneficios.html">Ver rutinas →</a>
+      </div>
+    </div>
+    <div class="fs-item">
+      <div class="fs-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+      <div>
+        <h4>Progreso</h4>
+        <p>Visualiza tu evolución con métricas y gráficos motivadores.</p>
+        <a class="fs-link" href="html/beneficios.html">Ver mi progreso →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hábitos -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Construye hábitos, transforma tu vida</h2>
+      <p class="section-sub">Todo lo que necesitas para entrenar mejor, de forma segura y sostenible.</p>
+      <div class="cards-4">
+        <div class="mini-card">
+          <div class="mc-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h4>Entrenamientos efectivos</h4>
+          <p>Métodos probados y actualizados.</p>
+        </div>
+        <div class="mini-card">
+          <div class="mc-icon"><i class="fa-solid fa-book-open"></i></div>
+          <h4>Contenido confiable</h4>
+          <p>Basado en ciencia y expertos.</p>
+        </div>
+        <div class="mini-card">
+          <div class="mc-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h4>Para todos los niveles</h4>
+          <p>Desde principiantes hasta avanzados.</p>
+        </div>
+        <div class="mini-card">
+          <div class="mc-icon"><i class="fa-solid fa-users"></i></div>
+          <h4>Comunidad activa</h4>
+          <p>Apoyo y motivación constante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Conoce a nuestro equipo</h2>
+      <p class="section-sub">Las personas detrás de TrueForm.</p>
+
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="fotos/Alvaro%20Erick%20Jordan%20Villa.jpeg" alt="Alvaro Erick Jordan Villa">
+          </div>
+          <h3>Alvaro Erick Jordan Villa</h3>
+          <p>Mi nombre es Alvaro Erick Jordan Villa. Me destaco por trabajar bien en equipo y por
+            mantener siempre una actitud empática. Confío en que nuestro aplicativo TrueForm pueda
+            aportar valor y ser de ayuda en la rutina diaria de nuestros usuarios.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="fotos/Marco%20Antonio%20Huamancayo%20Rojas.jpeg" alt="Marco Antonio Huamancayo Rojas">
+          </div>
+          <h3>Marco Antonio Huamancayo Rojas</h3>
+          <p>Mi nombre es Marco Antonio Huamancayo Rojas, me destaco por ser alguien centrado,
+            determinado a la hora de trabajar en grupo y buscando apoyar a quien necesita de ayuda.
+            Estoy seguro que la app de TrueForm podrá ser de utilidad en su día a día de los usuarios.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="fotos/Rivera%20Aguilar%20Brayan%20Fabricio.jpeg" alt="Rivera Aguilar Brayan Fabricio">
+          </div>
+          <h3>Rivera Aguilar Brayan Fabricio</h3>
+          <p>Mi nombre es Rivera Aguilar Brayan Fabricio. Me caracterizo por trabajar bien bajo
+            presión y tener una actitud predominantemente positiva. Considero que nuestro aplicativo
+            TrueForm es capaz de aportar un bien en la salud de nuestros usuarios.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="fotos/Lesly%20Solanshg%20Balta%20Callupe.jpeg" alt="Lesly Solanshg Balta Callupe">
+          </div>
+          <h3>Lesly Solanshg Balta Callupe</h3>
+          <p>Mi nombre es Lesly Solanshg Balta Callupe. Soy una persona proactiva, adaptable y con
+            buena comunicación en el trabajo en equipo. Estoy segura de que nuestro aplicativo
+            TrueForm será una herramienta práctica y confiable que acompañará y apoyará a los usuarios.</p>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="fotos/Dayron%20Mej%C3%ADa%20Vara.jpeg" alt="Misael Dayron Mejía Vara">
+          </div>
+          <h3>Misael Dayron Mejía Vara</h3>
+          <p>Soy Misael Dayron Mejía Vara, me considero una persona colaborativa con mi grupo de
+            trabajo y empática, además espero que nuestro aplicativo TrueForm sea de utilidad en el
+            día a día de los usuarios.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2026 TrueForm — Tu entrenador inteligente. Todos los derechos reservados.
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

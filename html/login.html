@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrueForm - Iniciar Sesión</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-badge"><img src="../fotos/logo.jpeg" alt="TrueForm"></span>
+      TrueForm
+    </div>
+    <button type="button" class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html">Inicio</a>
+      <a href="nosotros.html">Sobre Nosotros</a>
+      <a href="resenas.html">Reseñas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="login.html" class="active">Iniciar Sesión</a>
+      <a href="registro.html" class="btn-register">Registrar</a>
+    </nav>
+  </header>
+
+  <main class="teal-page">
+    <div class="panel panel-split">
+
+      <form onsubmit="return handleForm(event, '¡Bienvenido de nuevo a TrueForm!')">
+        <h2>Iniciar Sesión TrueForm</h2>
+        <div class="field">
+          <label for="lEmail">Email</label>
+          <input class="line-input" type="email" id="lEmail" name="email" required>
+        </div>
+        <div class="field">
+          <label for="lPass">Contraseña</label>
+          <input class="line-input" type="password" id="lPass" name="password" required>
+        </div>
+        <label class="check-row">
+          <input type="checkbox" onclick="togglePassword(this, 'lPass')"> Mostrar Contraseña
+        </label>
+        <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+        <a href="#" class="btn btn-primary btn-social"><i class="fa-brands fa-google"></i> Continuar con Google</a>
+        <a href="#" class="btn btn-primary btn-social"><i class="fa-brands fa-apple"></i> Continuar con Apple</a>
+      </form>
+
+      <div class="qr">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=230x230&data=https://trueform.com/login" alt="Código QR TrueForm">
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">© 2026 TrueForm — Tu entrenador inteligente.</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

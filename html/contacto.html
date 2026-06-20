@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrueForm - Contacto</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-badge"><img src="../fotos/logo.jpeg" alt="TrueForm"></span>
+      TrueForm
+    </div>
+    <button type="button" class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html">Inicio</a>
+      <a href="nosotros.html">Sobre Nosotros</a>
+      <a href="resenas.html">Reseñas</a>
+      <a href="contacto.html" class="active">Contacto</a>
+      <a href="login.html" class="btn-login">Iniciar Sesión</a>
+      <a href="registro.html" class="btn-register">Registrar</a>
+    </nav>
+  </header>
+
+  <main class="teal-page">
+    <div class="panel panel-split">
+
+      <div class="contact-info">
+        <div class="ci-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Av. Nicolás Dueñas 325</p>
+        </div>
+        <div class="ci-item">
+          <i class="fa-solid fa-phone-volume"></i>
+          <p>+51 954 425 954</p>
+        </div>
+        <div class="ci-item">
+          <i class="fa-solid fa-envelope"></i>
+          <p>support@trueform.com</p>
+        </div>
+        <div class="ci-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p>+51 954 245 134</p>
+        </div>
+      </div>
+
+      <form onsubmit="return handleForm(event, '¡Mensaje enviado! Te responderemos pronto.')">
+        <h2 style="text-align:center">Contáctanos</h2>
+        <div class="field">
+          <label for="cEmail">Email</label>
+          <input class="line-input" type="email" id="cEmail" name="email" required>
+        </div>
+        <div class="field">
+          <label for="cAsunto">Asunto</label>
+          <input class="line-input" type="text" id="cAsunto" name="asunto" required>
+        </div>
+        <div class="field">
+          <label for="cDesc">Descripción</label>
+          <input class="line-input" type="text" id="cDesc" name="descripcion" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+      </form>
+
+    </div>
+  </main>
+
+  <footer class="footer">© 2026 TrueForm — Tu entrenador inteligente.</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrueForm - Registrarse</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo-badge"><img src="../fotos/logo.jpeg" alt="TrueForm"></span>
+      TrueForm
+    </div>
+    <button type="button" class="nav-toggle" aria-label="Abrir menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="../index.html">Inicio</a>
+      <a href="nosotros.html">Sobre Nosotros</a>
+      <a href="resenas.html">Reseñas</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="login.html" class="btn-login">Iniciar Sesión</a>
+      <a href="registro.html" class="btn-register active">Registrar</a>
+    </nav>
+  </header>
+
+  <main class="teal-page">
+    <div class="panel panel-split">
+
+      <form onsubmit="return handleForm(event, '¡Registro exitoso! Bienvenido a TrueForm.')">
+        <h2>Registrarse en TrueForm</h2>
+        <div class="field">
+          <label for="rNombres">Nombres</label>
+          <input class="line-input" type="text" id="rNombres" name="nombres" required>
+        </div>
+        <div class="field">
+          <label for="rApellidos">Apellidos</label>
+          <input class="line-input" type="text" id="rApellidos" name="apellidos" required>
+        </div>
+        <div class="field">
+          <label for="rEmail">Email</label>
+          <input class="line-input" type="email" id="rEmail" name="email" required>
+        </div>
+        <div class="field">
+          <label for="rNivel">Elija su nivel</label>
+          <select class="line-select" id="rNivel" name="nivel" required>
+            <option value="" selected disabled>Selecciona una opción</option>
+            <option value="principiante">Principiante</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="rPass">Contraseña</label>
+            <input class="line-input" type="password" id="rPass" name="password" required>
+          </div>
+          <div class="field">
+            <label for="rPass2">Repetir contraseña</label>
+            <input class="line-input" type="password" id="rPass2" name="password2" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        <div class="social-row">
+          <a class="g" href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+          <a class="f" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a class="a" href="#" aria-label="Apple"><i class="fa-brands fa-apple"></i></a>
+        </div>
+      </form>
+
+      <div class="qr">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=230x230&data=https://trueform.com/registro" alt="Código QR TrueForm">
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">© 2026 TrueForm — Tu entrenador inteligente.</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
