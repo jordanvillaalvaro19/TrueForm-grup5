@@ -1,4 +1,5 @@
 TrueForm
+
 -Descripción
 TrueForm es una startup de base tecnológica enfocada en los sectores HealthTech y EdTech, creada para combatir la desinformación en el ámbito del fitness digital. Nuestra propuesta de valor consiste en brindar a los usuarios una plataforma inteligente que les permita estructurar planes de entrenamiento basados en evidencia científica y recibir orientación confiable para alcanzar sus objetivos físicos.
 A diferencia de las aplicaciones convencionales que ofrecen rutinas estáticas, TrueForm integra un Asistente Virtual impulsado por Inteligencia Artificial capaz de generar planes de entrenamiento personalizados según el nivel, objetivos y equipamiento disponible del usuario. Además, el sistema responde consultas en tiempo real mediante técnicas de Procesamiento de Lenguaje Natural (NLP), transformando conceptos complejos de las ciencias del deporte en recomendaciones prácticas y fáciles de aplicar.
